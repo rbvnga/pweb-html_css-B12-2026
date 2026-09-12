@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Elon Musk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="index.html" class="nav__brand"><span></span>ELON MUSK</a>
+
+      <!-- checkbox tersembunyi + label = menu mobile tanpa JS -->
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+
+      <!-- <label for="menu-toggle" class="nav__toggle-menu" aria-label="Buka menu"
+        >☰</label
+      > -->
+
+      <ul class="nav__links">
+        <li><a href="index.html" aria-current="page">Beranda</a></li>
+        <li><a href="cv.html">Creative CV</a></li>
+        <li class="theme-toggle">
+          <input type="checkbox" id="theme-switch" />
+          <label for="theme-switch"></label>
+          <span class="theme-toggle__txt">MODE</span>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Header Tokoh-->>
+    <header class="tokoh">
+      <div class="hero__visual">
+        <img
+          class="hero__photo"
+          src="images/elon-musk.jpg"
+          alt="Foto Elon Musk"
+        />
+      </div>
+      <div class="tokoh_konten">
+        <p class="tokoh__jabatan">
+          CEO <strong>Tesla</strong> · <strong>SpaceX</strong> ·
+          <strong>xAI</strong>
+        </p>
+        <h1>Membangun masa depan, satu peluncuran sekaligus.</h1>
+        <p class="tokoh__deskripsi">
+          Entrepreneur dan insinyur kelahiran Pretoria yang memimpin transisi
+          dunia menuju energi berkelanjutan dan menjadikan manusia spesies
+          multi-planet.
+        </p>
+        <div class="tokoh_aksi">
+          <a href="CV.html" class="button_perjalanan"
+            >Lihat Perjalanan Lengkap →</a
+          >
+          <a href="#karya" class="button_karya">Jelajahi Karya</a>
+        </div>
+      </div>
+    </header>
+
+    <!--- Section 1: Karya & Perusahaan -->
+    <section class="section" id="karya">
+      <div class="container">
+        <div class="section__head">
+          <h2>Karya & Perusahaan</h2>
+          <!--<p>
+            Enam perusahaan, satu visi: mempercepat kemajuan teknologi umat
+            manusia.
+          </p>-->
+        </div>
+
+        <div class="kp">
+          <a class="kp_isi" href="https://www.tesla.com" target="_blank">
+            <span class="kp_nomor">01</span>
+            <div>
+              <h3>Tesla, Inc.</h3>
+              <p>
+                Mempercepat transisi dunia ke energi berkelanjutan lewat mobil
+                listrik dan penyimpanan energi.
+              </p>
+            </div>
+            <span class="kp_situs">Kunjungi tesla.com →</span>
+          </a>
+
+          <a class="kp_isi" href="https://www.spacex.com" target="_blank">
+            <span class="kp_nomor">02</span>
+            <div>
+              <h3>SpaceX</h3>
+              <p>
+                Roket dapat digunakan ulang untuk membuat perjalanan luar
+                angkasa lebih terjangkau.
+              </p>
+            </div>
+            <span class="kp_situs">Kunjungi spacex.com →</span>
+          </a>
+
+          <a class="kp_isi" href="https://neuralink.com" target="_blank">
+            <span class="kp_nomor">03</span>
+            <div>
+              <h3>Neuralink</h3>
+              <p>
+                Antarmuka otak-komputer untuk membantu pemulihan fungsi
+                neurologis.
+              </p>
+            </div>
+            <span class="kp_situs">Kunjungi neuralink.com →</span>
+          </a>
+
+          <a
+            class="kp_isi"
+            href="https://www.boringcompany.com"
+            target="_blank"
+          >
+            <span class="kp_nomor">04</span>
+            <div>
+              <h3>The Boring Company</h3>
+              <p>
+                Terowongan bawah tanah sebagai solusi kemacetan kota-kota besar.
+              </p>
+            </div>
+            <span class="kp_situs">Kunjungi boringcompany.com →</span>
+          </a>
+
+          <a class="kp_isi" href="https://x.ai" target="_blank">
+            <span class="kp_nomor">05</span>
+            <div>
+              <h3>xAI</h3>
+              <p>
+                Perusahaan riset kecerdasan buatan dengan misi memahami alam
+                semesta.
+              </p>
+            </div>
+            <span class="kp_situs">Kunjungi x.ai →</span>
+          </a>
+
+          <a class="kp_isi" href="https://x.com" target="_blank">
+            <span class="kp_nomor">06</span>
+            <div>
+              <h3>X (dahulu Twitter)</h3>
+              <p>Platform komunikasi global yang diakuisisi pada tahun 2022.</p>
+            </div>
+            <span class="kp_situs">Kunjungi x.com →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Statistik -->
+    <section class="section">
+      <div class="container">
+        <div class="stats">
+          <div class="stats_isi">
+            <span class="stats_angaka">30+</span>
+            <span class="stats_label"
+              >TAHUN BERKARIER SEBAGAI ENTREPRENEUR</span
+            >
+          </div>
+          <div class="stats_isi">
+            <span class="stats_angaka">6</span>
+            <span class="stats_label">PERUSAHAAN BESAR DIPIMPIN</span>
+          </div>
+          <div class="stats_isi">
+            <span class="stats_angaka">400+</span>
+            <span class="stats_label">PELUNCURAN ROKET FALCON 9</span>
+          </div>
+          <div class="stats_isi">
+            <span class="stats_angaka">Ribuan</span>
+            <span class="stats_label">PATEN &amp; INOVASI TEKNOLOGI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Quotes -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Dalam Kata-katanya</h2>
+        </div>
+        <div class="quotes">
+          <div class="quote">
+            <blockquote>
+              When something is important enough, you do it even if the odds are
+              not in your favor.
+            </blockquote>
+            <cite>— Elon Musk</cite>
+          </div>
+          <div class="quote">
+            <blockquote>
+              You guys are the magicians of the 21st century. Dont's let
+              anything hold you back. Imagination is the limit. Go out there and
+              create some magic.
+            </blockquote>
+            <cite>— Elon Musk</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <small>© 2026 Elon Musk Portfolio · Dibuat oleh Kelompok B12</small>
+      <ul class="footer__socials">
+        <li>
+          <a href="https://x.com/elonmusk" target="_blank">𝕏</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank">IG</a>
+        </li>
+        <li>
+          <a href="https://www.tesla.com" target="_blank" aria-label="Tesla"
+            >T</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
