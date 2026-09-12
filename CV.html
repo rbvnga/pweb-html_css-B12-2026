@@ -3,15 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CV Elon Musk</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="cv-header">
+    <nav class="nav">
+      <a href="index.html" class="nav__brand"><span></span>ELON MUSK</a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="nav__toggle-menu">☰</label>
+
+      <ul class="nav__links">
+        <li><a href="porto.html">Beranda</a></li>
+        <li><a href="CV.html" aria-current="page">Creative CV</a></li>
+        <li class="theme-toggle">
+          <input type="checkbox" id="theme-switch" />
+          <label for="theme-switch"></label>
+          <span class="theme-toggle__txt">MODE</span>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header CV -->
+    <header class="cv_header">
       <img
-        class="cv-header__photo"
-        src="images/elon-musk.jpg"
-        alt="Foto Elon Musk"
+        class="cv_header_foto"
+        src="images/elon-musk2.jpg"
+        alt="Foto Elon Musk 2"
       />
       <div>
         <h1>Elon Musk</h1>
@@ -20,6 +38,306 @@
         </p>
       </div>
     </header>
+
+    <!--Section 1: Statistik CV-->
+    <section class="section">
+      <div class="container">
+        <div class="stats">
+          <div class="stats_isi">
+            <span class="stats_angka">1971</span>
+            <span class="stats_label">TAHUN LAHIR, PRETORIA</span>
+          </div>
+          <div class="stats_isi">
+            <span class="stats_angka">6</span>
+            <span class="stats_label">PERUSAHAAN DIDIRIKAN / DIPIMPIN</span>
+          </div>
+          <div class="stats_isi">
+            <span class="stats_angka">2</span>
+            <span class="stats_label"
+              >GELAR SARJANA — FISIKA &amp; EKONOMI</span
+            >
+          </div>
+          <div class="stats_isi">
+            <span class="stats_angka">400K+</span>
+            <span class="stats_label"
+              >KARYAWAN GABUNGAN SELURUH PERUSAHAAN</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section 2: Tentang & Karakter-->
+    <section class="section">
+      <div class="container">
+        <div>
+          <h2>Tentang &amp; Karakter</h2>
+        </div>
+        <div>
+          <p>
+            Seorang insinyur dan pengusaha kelahiran Pretoria, Afrika Selatan,
+            yang dikenal karena visi jangka panjangnya membawa manusia menjadi
+            spesies multi-planet sekaligus mempercepat transisi dunia menuju
+            energi bersih. Elon dikenal dengan pendekatan
+            <em>first principles thinking</em> — memecah masalah kompleks hingga
+            ke elemen paling dasar sebelum membangun solusi dari awal.
+          </p>
+          <p>
+            Gaya kepemimpinannya sering digambarkan sangat langsung dan terlibat
+            penuh di lini teknis, mulai dari desain mesin roket hingga
+            arsitektur baterai kendaraan listrik. Ia percaya bahwa risiko besar
+            sepadan diambil jika hasilnya berdampak jangka panjang bagi
+            peradaban manusia.
+          </p>
+          <div class="chip-grid" style="margin-top: 1.5rem">
+            <span class="chip">First Principles Thinking</span>
+            <span class="chip">Engineering-Led</span>
+            <span class="chip">Risk-Tolerant</span>
+            <span class="chip">Long-Term Vision</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Section 3: Riwayat Karier -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Riwayat Karier</h2>
+        </div>
+
+        <ul class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__period">2023—kini</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Founder, xAI</h3>
+              <span class="timeline__place">San Francisco, AS</span>
+              <p>
+                Mendirikan perusahaan riset kecerdasan buatan dengan misi
+                memahami alam semesta secara mendalam.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag">AI Research</span>
+                <span class="tag">Large Language Model</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <span class="timeline__period">2022—kini</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Pemilik &amp; Executive Chairman, X (Twitter)</h3>
+              <span class="timeline__place">San Francisco, AS</span>
+              <p>
+                Mengakuisisi platform media sosial dan mentransformasikannya
+                menjadi "aplikasi segalanya" bernama X.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag">Social Media</span>
+                <span class="tag">Product Strategy</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <span class="timeline__period">2016—kini</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Founder, The Boring Company</h3>
+              <span class="timeline__place">Los Angeles, AS</span>
+              <p>
+                Mengembangkan sistem terowongan transportasi bawah tanah (Loop)
+                untuk mengurangi kemacetan kota.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag">Infrastructure</span>
+                <span class="tag">Urban Mobility</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <span class="timeline__period">2016—kini</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Co-founder, Neuralink</h3>
+              <span class="timeline__place">Fremont, AS</span>
+              <p>
+                Mengembangkan antarmuka otak-komputer untuk membantu pemulihan
+                fungsi neurologis pasien.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag">Neurotechnology</span>
+                <span class="tag">Medical Devices</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <span class="timeline__period">2004—kini</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>CEO, Tesla, Inc.</h3>
+              <span class="timeline__place">Austin, AS</span>
+              <p>
+                Bergabung sebagai investor awal, lalu memimpin perusahaan menuju
+                produksi massal kendaraan listrik dan energi surya.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag">EV Technology</span>
+                <span class="tag">Renewable Energy</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <span class="timeline__period">2002—kini</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Founder &amp; Chief Engineer, SpaceX</h3>
+              <span class="timeline__place">Hawthorne, AS</span>
+              <p>
+                Mendirikan perusahaan roket dengan misi menjadikan manusia
+                spesies multi-planet melalui teknologi roket dapat digunakan
+                ulang.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag">Aerospace</span>
+                <span class="tag">Rocket Engineering</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <span class="timeline__period">1999</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Co-founder, X.com</h3>
+              <span class="timeline__place">Palo Alto, AS</span>
+              <p>
+                Startup pembayaran daring yang kemudian bergabung menjadi
+                PayPal.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag">Fintech</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <span class="timeline__period">1995</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Co-founder, Zip2</h3>
+              <span class="timeline__place">Palo Alto, AS</span>
+              <p>
+                Startup direktori bisnis daring pertamanya, dijual kepada Compaq
+                pada tahun 1999.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag">Software</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--Section 4: Pendidikan -->
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Riwayat Pendidikan</h2>
+          <p>Latar belakang akademik di bidang fisika, ekonomi, dan teknik.</p>
+        </div>
+
+        <ul class="timeline">
+          <li class="timeline__item">
+            <span class="timeline__period">1995—1997</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Program PhD Fisika Terapan (tidak selesai)</h3>
+              <span class="timeline__place">Stanford University</span>
+              <p>
+                Mengambil cuti setelah dua hari untuk fokus membangun startup
+                pertamanya, Zip2.
+              </p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__period">1992—1995</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Sarjana Fisika &amp; Ekonomi</h3>
+              <span class="timeline__place">University of Pennsylvania</span>
+              <p>
+                Menyelesaikan dua gelar sarjana sekaligus di bidang sains dan
+                bisnis.
+              </p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__period">1990—1992</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Studi Awal Sarjana</h3>
+              <span class="timeline__place">Queen's University, Kanada</span>
+              <p>
+                Memulai pendidikan tinggi sebelum pindah ke Amerika Serikat.
+              </p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <span class="timeline__period">1980-an</span>
+            <span class="timeline__dot"></span>
+            <div class="timeline__body">
+              <h3>Sekolah Menengah</h3>
+              <span class="timeline__place"
+                >Pretoria Boys High School, Afrika Selatan</span
+              >
+              <p>Menyelesaikan pendidikan menengah di kota kelahirannya.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section 5: Penghargaan -->>
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2>Penghargaan &amp; Pengakuan</h2>
+          <p>Sebagian pengakuan atas kontribusinya di dunia teknologi.</p>
+        </div>
+        <div class="awards">
+          <div class="awards_isi">
+            <span class="awards_tahun">2021</span>
+            <h4>Time Person of the Year</h4>
+            <p>
+              Diakui atas pengaruhnya terhadap industri luar angkasa dan
+              kendaraan listrik.
+            </p>
+          </div>
+          <div class="awards_isi">
+            <span class="awards_tahun">2018</span>
+            <h4>Axel Springer Award</h4>
+            <p>
+              Penghargaan atas kontribusi terhadap inovasi teknologi global.
+            </p>
+          </div>
+          <div class="awards_isi">
+            <span class="awards_tahun">2010</span>
+            <h4>Green Powered Award</h4>
+            <p>
+              Pengakuan atas kontribusi pada pengembangan kendaraan listrik
+              ramah lingkungan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">

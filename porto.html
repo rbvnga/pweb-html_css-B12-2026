@@ -10,16 +10,12 @@
     <nav class="nav">
       <a href="index.html" class="nav__brand"><span></span>ELON MUSK</a>
 
-      <!-- checkbox tersembunyi + label = menu mobile tanpa JS -->
       <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
-
-      <!-- <label for="menu-toggle" class="nav__toggle-menu" aria-label="Buka menu"
-        >☰</label
-      > -->
+      <label for="menu-toggle" class="nav__toggle-menu">☰</label>
 
       <ul class="nav__links">
-        <li><a href="index.html" aria-current="page">Beranda</a></li>
-        <li><a href="cv.html">Creative CV</a></li>
+        <li><a href="porto.html" aria-current="page">Beranda</a></li>
+        <li><a href="CV.html">Creative CV</a></li>
         <li class="theme-toggle">
           <input type="checkbox" id="theme-switch" />
           <label for="theme-switch"></label>
@@ -30,20 +26,20 @@
 
     <!--Header Tokoh-->>
     <header class="tokoh">
-      <div class="hero__visual">
+      <div class="tokoh_visual">
         <img
-          class="hero__photo"
+          class="tokoh_foto"
           src="images/elon-musk.jpg"
           alt="Foto Elon Musk"
         />
       </div>
       <div class="tokoh_konten">
-        <p class="tokoh__jabatan">
+        <p class="tokoh_jabatan">
           CEO <strong>Tesla</strong> · <strong>SpaceX</strong> ·
           <strong>xAI</strong>
         </p>
         <h1>Membangun masa depan, satu peluncuran sekaligus.</h1>
-        <p class="tokoh__deskripsi">
+        <p class="tokoh_deskripsi">
           Entrepreneur dan insinyur kelahiran Pretoria yang memimpin transisi
           dunia menuju energi berkelanjutan dan menjadikan manusia spesies
           multi-planet.
@@ -57,15 +53,11 @@
       </div>
     </header>
 
-    <!--- Section 1: Karya & Perusahaan -->
+    <!--- Section 1: Karya & Perusahaan (kp) -->
     <section class="section" id="karya">
       <div class="container">
         <div class="section__head">
           <h2>Karya & Perusahaan</h2>
-          <!--<p>
-            Enam perusahaan, satu visi: mempercepat kemajuan teknologi umat
-            manusia.
-          </p>-->
         </div>
 
         <div class="kp">
@@ -73,6 +65,7 @@
             <span class="kp_nomor">01</span>
             <div>
               <h3>Tesla, Inc.</h3>
+              <img class="kp_foto" src="images/tesla.png" alt="Foto Tesla" />
               <p>
                 Mempercepat transisi dunia ke energi berkelanjutan lewat mobil
                 listrik dan penyimpanan energi.
@@ -85,6 +78,7 @@
             <span class="kp_nomor">02</span>
             <div>
               <h3>SpaceX</h3>
+              <img class="kp_foto" src="images/spacex.png" alt="Foto SpaceX" />
               <p>
                 Roket dapat digunakan ulang untuk membuat perjalanan luar
                 angkasa lebih terjangkau.
@@ -97,6 +91,11 @@
             <span class="kp_nomor">03</span>
             <div>
               <h3>Neuralink</h3>
+              <img
+                class="kp_foto"
+                src="images/neuralink.jpg"
+                alt="Foto Neuralink"
+              />
               <p>
                 Antarmuka otak-komputer untuk membantu pemulihan fungsi
                 neurologis.
@@ -113,6 +112,11 @@
             <span class="kp_nomor">04</span>
             <div>
               <h3>The Boring Company</h3>
+              <img
+                class="kp_foto"
+                src="images/the-boring-company.jpg"
+                alt="Foto The Boring Company"
+              />
               <p>
                 Terowongan bawah tanah sebagai solusi kemacetan kota-kota besar.
               </p>
@@ -124,6 +128,7 @@
             <span class="kp_nomor">05</span>
             <div>
               <h3>xAI</h3>
+              <img class="kp_foto" src="images/Xai.png" alt="Foto xAI" />
               <p>
                 Perusahaan riset kecerdasan buatan dengan misi memahami alam
                 semesta.
@@ -136,6 +141,7 @@
             <span class="kp_nomor">06</span>
             <div>
               <h3>X (dahulu Twitter)</h3>
+              <img class="kp_foto" src="images/X.jpg" alt="Foto X" />
               <p>Platform komunikasi global yang diakuisisi pada tahun 2022.</p>
             </div>
             <span class="kp_situs">Kunjungi x.com →</span>
@@ -144,26 +150,26 @@
       </div>
     </section>
 
-    <!-- Section 2: Statistik -->
+    <!-- Section 2: Statistik Porto-->
     <section class="section">
       <div class="container">
         <div class="stats">
           <div class="stats_isi">
-            <span class="stats_angaka">30+</span>
+            <span class="stats_angka">30+</span>
             <span class="stats_label"
               >TAHUN BERKARIER SEBAGAI ENTREPRENEUR</span
             >
           </div>
           <div class="stats_isi">
-            <span class="stats_angaka">6</span>
+            <span class="stats_angka">6</span>
             <span class="stats_label">PERUSAHAAN BESAR DIPIMPIN</span>
           </div>
           <div class="stats_isi">
-            <span class="stats_angaka">400+</span>
+            <span class="stats_angka">400+</span>
             <span class="stats_label">PELUNCURAN ROKET FALCON 9</span>
           </div>
           <div class="stats_isi">
-            <span class="stats_angaka">Ribuan</span>
+            <span class="stats_angka">Ribuan</span>
             <span class="stats_label">PATEN &amp; INOVASI TEKNOLOGI</span>
           </div>
         </div>
@@ -196,6 +202,7 @@
       </div>
     </section>
 
+    <!-- Section 4: Kanal Aspirasi -->
     <section>
       <div class="container">
         <div class="section__head">
