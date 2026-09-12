@@ -1,0 +1,751 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f5f5f2;
+  color: #111111;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.nav {
+  height: 90px;
+  padding: 0 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #f5f5f2;
+  border-bottom: 1px solid #bdbdbd;
+}
+
+.nav__brand {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav__brand span {
+  width: 12px;
+  height: 12px;
+
+  display: inline-block;
+
+  background-color: #111111;
+  border-radius: 50%;
+}
+
+.nav__links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav__links a {
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+.nav__links a::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 1px;
+
+  background-color: #111111;
+
+  transition: width 0.3s ease;
+}
+
+.nav__links a:hover::after {
+  width: 100%;
+}
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.menu-checkbox {
+  display: none;
+}
+
+.nav__toggle-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* =========================
+   MODE TOGGLE
+========================= */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.theme-toggle label {
+  width: 40px;
+  height: 20px;
+
+  background-color: #111111;
+  border-radius: 20px;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-toggle label::after {
+  content: "";
+
+  width: 14px;
+  height: 14px;
+
+  position: absolute;
+  top: 3px;
+  left: 3px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.theme-toggle__txt {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+/* =========================
+   HERO / TOKOH
+========================= */
+
+.tokoh {
+  min-height: calc(100vh - 90px);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: #f5f5f2;
+}
+
+.tokoh_visual {
+  background-color: #111111;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.tokoh_foto {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  filter: grayscale(100%);
+  transition:
+    filter 0.4s ease,
+    transform 0.5s ease;
+}
+
+.tokoh_visual:hover .tokoh_foto {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+}
+
+.tokoh_konten {
+  padding: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tokoh_jabatan {
+  margin-bottom: 25px;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: #666666;
+}
+
+.tokoh_konten h1 {
+  max-width: 650px;
+
+  margin-bottom: 30px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 90px);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -3px;
+}
+
+.tokoh_deskripsi {
+  max-width: 550px;
+
+  margin-bottom: 40px;
+
+  color: #5f5f5f;
+  font-size: 16px;
+}
+
+/* =========================
+   HERO BUTTON
+========================= */
+
+.tokoh_aksi {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button_perjalanan,
+.button_karya {
+  padding: 14px 24px;
+
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  border: 1px solid #111111;
+
+  transition: 0.3s ease;
+}
+
+.button_perjalanan {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.button_perjalanan:hover {
+  background-color: transparent;
+  color: #111111;
+}
+
+.button_karya {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.button_karya:hover {
+  background-color: transparent;
+  color: #111111;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section__head {
+  margin-bottom: 60px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.section__head h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+/* =========================
+   KARYA & PERUSAHAAN
+========================= */
+
+.kp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.kp_isi {
+  min-height: 500px;
+
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+
+  border-right: 1px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.kp_isi:nth-child(3n + 1) {
+  border-left: 1px solid #bdbdbd;
+}
+
+.kp_isi:nth-child(-n + 3) {
+  border-top: 1px solid #bdbdbd;
+}
+
+.kp_nomor {
+  margin-bottom: 50px;
+
+  font-size: 11px;
+  letter-spacing: 2px;
+
+  color: #777777;
+}
+
+.kp_isi h3 {
+  margin-bottom: 20px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.kp_foto {
+  width: 100%;
+  height: 200px;
+
+  margin-bottom: 25px;
+
+  object-fit: cover;
+
+  filter: grayscale(100%);
+}
+
+.kp_isi p {
+  color: #656565;
+  font-size: 14px;
+
+  margin-bottom: 30px;
+}
+
+.kp_situs {
+  margin-top: auto;
+
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.kp_isi:hover {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.kp_isi:hover p,
+.kp_isi:hover .kp_nomor {
+  color: #cccccc;
+}
+
+/* =========================
+   STATISTICS
+========================= */
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.stats_isi {
+  min-height: 260px;
+
+  padding: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-right: 1px solid #444444;
+}
+
+.stats_isi:last-child {
+  border-right: none;
+}
+
+.stats_angka {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.stats_label {
+  max-width: 180px;
+
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+
+  color: #bcbcbc;
+}
+
+/* =========================
+   QUOTES
+========================= */
+
+.quotes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.quote {
+  min-height: 400px;
+
+  padding: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote:first-child {
+  border-right: 1px solid #aaa;
+}
+
+.quote blockquote {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 4vw, 48px);
+
+  line-height: 1.15;
+
+  quotes: "“" "”";
+}
+
+.quote blockquote::before {
+  content: open-quote;
+}
+
+.quote blockquote::after {
+  content: close-quote;
+}
+
+.quote cite {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  font-style: normal;
+
+  color: #777777;
+}
+
+/* =========================
+   FORM
+========================= */
+
+form {
+  max-width: 800px;
+
+  padding-bottom: 100px;
+}
+
+form label {
+  font-size: 11px;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+form input,
+form textarea {
+  width: 100%;
+
+  margin-top: 8px;
+  margin-bottom: 30px;
+
+  padding: 15px 0;
+
+  background-color: transparent;
+
+  border: none;
+  border-bottom: 1px solid #777777;
+
+  font-family: inherit;
+  font-size: 18px;
+
+  outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+  border-bottom-color: #111111;
+}
+
+form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+form button {
+  padding: 16px 40px;
+
+  background-color: #111111;
+  color: #ffffff;
+
+  border: 1px solid #111111;
+
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: transparent;
+  color: #111111;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  min-height: 180px;
+
+  padding: 50px;
+
+  background-color: #111111;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer small {
+  color: #aaaaaa;
+
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.footer__socials {
+  list-style: none;
+
+  display: flex;
+  gap: 15px;
+}
+
+.footer__socials a {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #555555;
+  border-radius: 50%;
+
+  transition: 0.3s;
+}
+
+.footer__socials a:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .tokoh {
+    grid-template-columns: 1fr;
+  }
+
+  .tokoh_visual {
+    height: 600px;
+  }
+
+  .tokoh_konten {
+    padding: 60px 30px;
+  }
+
+  .kp {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .kp_isi:nth-child(3n + 1),
+  .kp_isi:nth-child(-n + 3) {
+    border-left: none;
+    border-top: none;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quotes {
+    grid-template-columns: 1fr;
+  }
+
+  .quote:first-child {
+    border-right: none;
+    border-bottom: 1px solid #aaa;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    padding: 0 20px;
+  }
+
+  .nav__toggle-menu {
+    display: block;
+
+    font-size: 24px;
+  }
+
+  .nav__links {
+    position: absolute;
+
+    top: 90px;
+    left: 0;
+
+    width: 100%;
+
+    padding: 30px;
+
+    display: none;
+    flex-direction: column;
+
+    background-color: #f5f5f2;
+
+    border-bottom: 1px solid #aaa;
+  }
+
+  .menu-checkbox:checked ~ .nav__links {
+    display: flex;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  .tokoh_visual {
+    height: 450px;
+  }
+
+  .tokoh_konten {
+    padding: 50px 20px;
+  }
+
+  .tokoh_konten h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+  }
+
+  .tokoh_aksi {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .button_perjalanan,
+  .button_karya {
+    text-align: center;
+  }
+
+  .kp {
+    grid-template-columns: 1fr;
+  }
+
+  .kp_isi {
+    border: 1px solid #bdbdbd;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stats_isi {
+    min-height: 200px;
+
+    border-right: none;
+    border-bottom: 1px solid #444444;
+  }
+
+  .quote {
+    padding: 35px 10px;
+  }
+
+  .footer {
+    padding: 40px 20px;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 30px;
+  }
+}
