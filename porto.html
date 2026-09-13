@@ -8,18 +8,18 @@
   </head>
   <body>
     <nav class="nav">
-      <a href="index.html" class="nav__brand"><span></span>ELON MUSK</a>
+      <div class="nav_brand">Elon Musk</div>
 
       <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
-      <label for="menu-toggle" class="nav__toggle-menu">☰</label>
+      <label for="menu-toggle" class="nav_toggle-menu">☰</label>
 
-      <ul class="nav__links">
+      <ul class="nav_links">
         <li><a href="porto.html" aria-current="page">Beranda</a></li>
         <li><a href="CV.html">Creative CV</a></li>
         <li class="theme-toggle">
           <input type="checkbox" id="theme-switch" />
           <label for="theme-switch"></label>
-          <span class="theme-toggle__txt">MODE</span>
+          <span class="theme-toggle_txt">MODE</span>
         </li>
       </ul>
     </nav>
@@ -29,7 +29,7 @@
       <div class="tokoh_visual">
         <img
           class="tokoh_foto"
-          src="images/elon-musk.jpg"
+          src="images/elon-musk2.jpg"
           alt="Foto Elon Musk"
         />
       </div>
@@ -56,7 +56,7 @@
     <!--- Section 1: Karya & Perusahaan (kp) -->
     <section class="section" id="karya">
       <div class="container">
-        <div class="section__head">
+        <div class="section_head">
           <h2>Karya & Perusahaan</h2>
         </div>
 
@@ -179,7 +179,7 @@
     <!-- Section 3: Quotes -->
     <section class="section">
       <div class="container">
-        <div class="section__head">
+        <div class="section_head">
           <h2>Dalam Kata-katanya</h2>
         </div>
         <div class="quotes">
@@ -203,9 +203,9 @@
     </section>
 
     <!-- Section 4: Kanal Aspirasi -->
-    <section>
+    <section class="section">
       <div class="container">
-        <div class="section__head">
+        <div class="section_head">
           <h2>Kanal Aspirasi</h2>
         </div>
 
@@ -232,7 +232,6 @@
           <br />
           <label for="Pesan">Pesan</label> <br />
           <textarea
-            type="text"
             id="Pesan"
             name="Pesan"
             placeholder="Tulis pesanmu disini"
@@ -248,17 +247,21 @@
     <!-- Footer -->
     <footer class="footer">
       <small>© 2026 Elon Musk Portfolio · Dibuat oleh Kelompok B12</small>
-      <ul class="footer__socials">
+      <ul class="footer_socials">
         <li>
-          <a href="https://x.com/elonmusk" target="_blank">𝕏</a>
+          <a href="https://x.com/elonmusk" target="_blank"
+            ><img src="images/x.svg" alt="X"
+          /></a>
         </li>
         <li>
-          <a href="https://www.instagram.com" target="_blank">IG</a>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img src="images/instagram.svg" alt="Instagram"
+          /></a>
         </li>
         <li>
           <a href="https://www.tesla.com" target="_blank" aria-label="Tesla"
-            >T</a
-          >
+            ><img src="images/tesla.svg" alt="Tesla"
+          /></a>
         </li>
       </ul>
     </footer>
