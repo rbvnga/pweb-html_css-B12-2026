@@ -571,14 +571,14 @@ form button:hover {
    DARK MODE
 ========================= */
 
-/* Global */
+/* GLOBAL */
 
 body:has(#theme-switch:checked) {
   background-color: #111111;
   color: #f5f5f2;
 }
 
-/* Navbar */
+/* NAVBAR */
 
 body:has(#theme-switch:checked) .nav {
   background-color: #111111;
@@ -591,7 +591,7 @@ body:has(#theme-switch:checked) .nav_links a:hover {
   color: #ffffff;
 }
 
-/* Hero */
+/* HERO */
 
 body:has(#theme-switch:checked) .tokoh {
   background-color: #111111;
@@ -602,7 +602,7 @@ body:has(#theme-switch:checked) .tokoh_jabatan {
   color: #bcbcbc;
 }
 
-/* Karya & Perusahaan */
+/* KARYA & Perusahaan */
 
 body:has(#theme-switch:checked) .kp_isi:hover {
   background-color: #f5f5f2;
@@ -614,7 +614,7 @@ body:has(#theme-switch:checked) .kp_isi:hover .kp_nomor {
   color: #111111;
 }
 
-/* Form */
+/* FORM */
 
 body:has(#theme-switch:checked) form input,
 body:has(#theme-switch:checked) form textarea {
