@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212; 
-  color: #f5f5f5; 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
   line-height: 1.6;
 }
 
@@ -21,7 +21,7 @@ ul {
 }
 
 .nav {
-  position: sticky; 
+  position: sticky;
   top: 0;
   background-color: #000;
   display: flex;
@@ -38,8 +38,9 @@ ul {
   letter-spacing: 2px;
 }
 
-.menu-checkbox, #theme-switch {
-  display: none; 
+.menu-checkbox,
+#theme-switch {
+  display: none;
 }
 
 .nav__toggle-menu {
@@ -72,7 +73,7 @@ ul {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #fff; 
+  border: 4px solid #fff;
   margin-bottom: 1rem;
 }
 
@@ -86,13 +87,17 @@ ul {
   margin: 0 auto;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   margin-bottom: 0.5rem;
   color: #fff;
 }
 
-.stats, .awards, .chip-grid {
-  display: grid; 
+.stats,
+.awards,
+.chip-grid {
+  display: grid;
   gap: 1.5rem;
 }
 
@@ -108,7 +113,8 @@ h2, h3, h4 {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-.stats_isi, .awards_isi {
+.stats_isi,
+.awards_isi {
   background: #000;
   padding: 1.5rem;
   border: 1px solid #444;
@@ -116,24 +122,28 @@ h2, h3, h4 {
   transition: transform 0.3s;
 }
 
-.stats_isi:hover, .awards_isi:hover {
+.stats_isi:hover,
+.awards_isi:hover {
   transform: translateY(-5px);
   border-color: #fff;
 }
 
 .stats_angka {
-  display: block; 
+  display: block;
   font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
 }
 
-.stats_label, .timeline__period, .timeline__place {
+.stats_label,
+.timeline__period,
+.timeline__place {
   font-size: 0.85rem;
   color: #aaa;
 }
 
-.chip, .tag {
+.chip,
+.tag {
   background: #fff;
   color: #000;
   padding: 0.5rem 1rem;
@@ -159,13 +169,13 @@ h2, h3, h4 {
 }
 
 .timeline__item {
-  position: relative; 
+  position: relative;
   margin-bottom: 2.5rem;
 }
 
 .timeline__dot {
-  position: absolute; 
-  left: -1.85rem; 
+  position: absolute;
+  left: -1.85rem;
   top: 0.2rem;
   width: 12px;
   height: 12px;
@@ -198,7 +208,7 @@ h2, h3, h4 {
   }
 
   .nav__links {
-    display: none; 
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
